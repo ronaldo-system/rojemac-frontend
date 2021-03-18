@@ -16,7 +16,6 @@ const ListEmpresa = () => {
   }
 
   function deleteEmpresa(id) {
-    // TODO api delete
     api.post('/empresa-delete', { id })
       .then(res => {
         setEmpresas(empresas.filter(empresa => empresa.id !== id))
@@ -38,6 +37,7 @@ const ListEmpresa = () => {
             <th>CNPJ</th>
             <th>Razão Social</th>
             <th>Logradouro</th>
+            <th>Numero</th>
             <th>Ações</th>
           </tr>
         </thead>
@@ -49,6 +49,7 @@ const ListEmpresa = () => {
                 <td>{empresa.cnpj}</td>
                 <td>{empresa.razao}</td>
                 <td>{empresa.logradouro}</td>
+                <td>{empresa.numero}</td>
                 <td>
                   <button onClick={() => deleteEmpresa(empresa.id)}>Deletar</button>
                   <Link to={`/edit/${empresa.id}`}>Editar</Link>
