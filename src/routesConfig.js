@@ -1,7 +1,7 @@
 import CreateEmpresa from './pages/CreateEmpresa'
 import ListEmpresa from './pages/ListEmpresa'
 import EditEmpresa from './pages/EditEmpresa'
-import Home from './App'
+import Home from './pages/Home'
 
 const routesConfig = [
     {

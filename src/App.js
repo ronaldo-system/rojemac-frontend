@@ -13,7 +13,7 @@ function App() {
           <Link to="/list">Lista Empresa</Link>
           <Link to="/create">Nova Empresa</Link>
         </div>
-        <img src={logoRojemac} className="App-logo" alt="logo" />
+        <img src={logoRojemac} className="App-logo-rojemarc" alt="logo" />
         {routesConfig.map((value, key)=>{
           return <Route
             key={key}

@@ -3,6 +3,11 @@
 }
 
 .App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-logo-rojemarc {
   height: 20vmin;
   pointer-events: none;
   position: absolute;
@@ -10,11 +15,11 @@
   left: 0
 }
 
-/* @media (prefers-reduced-motion: no-preference) {
+@media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-} */
+}
 
 .App-header {
   background-color: #282c34;
@@ -31,14 +36,14 @@
   color: #61dafb;
 }
 
-/* @keyframes App-logo-spin {
+@keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-} */
+}
 
 .link-home {
   position: absolute;
@@ -49,6 +54,13 @@
   padding: 0 10px 0 10px;
   font-size: medium;
   color: white
+}
+
+.form-empresa form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-empresa form {
@@ -73,4 +85,119 @@
   border-color: #80bdff;
   outline: 0;
   box-shadow: 0 0 0 0.1rem rgb(0 123 255 / 25%);
+}
+
+table td, th{
+  font-size: medium;
+}
+
+table td {
+  padding: 0 7px 0 7px;
+}
+
+table td a{
+  margin: 2px 5px 2px 5px !important;
+}
+
+.btn.min-width{
+  width: 310px;
+  margin-top: 10px
+}
+
+.btn{
+  max-width: 315px;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+[type=reset], [type=submit], button, html [type=button] {
+  -webkit-appearance: button;
+}
+
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer;
+}
+
+button, select {
+  text-transform: none;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+[type=reset], [type=submit], button, html [type=button] {
+    -webkit-appearance: button;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-danger {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-danger:hover {
+  color: #fff;
+  background-color: #c82333;
+  border-color: #bd2130;
+  outline: none;
+}
+
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 0.7;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+button, select {
+    text-transform: none;
+}
+button, input {
+    overflow: visible;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #0069d9;
+  border-color: #0062cc;
+  outline: none;
+}
+
+.btn:focus, .btn:hover {
+  text-decoration: none;
 }

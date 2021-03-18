@@ -30,7 +30,7 @@ const ListEmpresa = () => {
   return (
     <div>
       <h3>Lista de Empresas</h3>
-      <table>
+      <table border="1">
         <thead>
           <tr>
             <th>ID</th>
@@ -51,8 +51,14 @@ const ListEmpresa = () => {
                 <td>{empresa.logradouro}</td>
                 <td>{empresa.numero}</td>
                 <td>
-                  <button onClick={() => deleteEmpresa(empresa.id)}>Deletar</button>
-                  <Link to={`/edit/${empresa.id}`}>Editar</Link>
+                  <button 
+                    onClick={() => deleteEmpresa(empresa.id)}
+                    className="btn btn-danger"
+                    >Deletar</button>
+                  <Link 
+                    className="btn btn-primary" 
+                    to={`/edit/${empresa.id}`}
+                    >Editar</Link>
                 </td>
               </tr>
             )
