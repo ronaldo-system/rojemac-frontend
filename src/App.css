@@ -3,15 +3,18 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 20vmin;
   pointer-events: none;
+  position: absolute;
+  top: 30px;
+  left: 0
 }
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 .App-header {
   background-color: #282c34;
@@ -28,11 +31,46 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+} */
+
+.link-home {
+  position: absolute;
+  top: 30px;
+}
+
+.link-home a {
+  padding: 0 10px 0 10px;
+  font-size: medium;
+  color: white
+}
+
+.form-empresa form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-empresa label {
+  font-size: medium;
+  padding-right: 5px;
+}
+
+.form-empresa input{
+  margin: 5px;
+  width: 300px;
+  height: 20px;
+}
+
+.form-empresa input:focus{
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.1rem rgb(0 123 255 / 25%);
 }
